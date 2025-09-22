@@ -38,6 +38,6 @@ int main() {
     const double x = distReal(gen);
 
     std::cout << "Entier [0,9]: " << n << "\n";
-    std::cout << "Reel [0,1): " << x << "\n";
+    std::cout << "Reel [0,1]: " << x << "\n";
     return 0;
 }
