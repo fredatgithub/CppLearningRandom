@@ -50,8 +50,8 @@ int main() {
     cout << "SuperLong: 123456789" << superLongNumber << "\n";
     // system("pause");
     cout << R"(Reel: 123456789)" << superLongNumber << "\n";
-    cout << "EXIT_SUCCESS vaut zero : " << EXIT_SUCCESS;
-    cout << CodeRetour[ERREUR_FICHIER] << endl;
+    cout << "EXIT_SUCCESS vaut zero : " << EXIT_SUCCESS << endl;
+    cout << "L erreur fichier de l enumeration vaut : " << ERREUR_FICHIER << endl;
 
     return EXIT_SUCCESS;
 }
