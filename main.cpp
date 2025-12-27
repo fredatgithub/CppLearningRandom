@@ -2,13 +2,31 @@
 #include <cstdlib>
 #include <ctime>
 #include <random>
-#include <iostream>
+
 using namespace std;
 
 enum CodeRetour {
     SUCCES = 0,
     ERREUR_ENTREE = 1,
     ERREUR_FICHIER = 2
+};
+
+enum Couleur {
+    ROUGE,
+    VERT,
+    BLEU
+};
+
+enum Etat {
+    DEMARRAGE,
+    EN_COURS,
+    ARRET
+};
+
+enum class Niveau {
+    FAIBLE,
+    MOYEN,
+    ELEVE
 };
 
 int main() {
@@ -52,6 +70,18 @@ int main() {
     cout << R"(Reel: 123456789)" << superLongNumber << "\n";
     cout << "EXIT_SUCCESS vaut zero : " << EXIT_SUCCESS << endl;
     cout << "L erreur fichier de l enumeration vaut : " << ERREUR_FICHIER << endl;
+
+    Couleur c = ROUGE;
+
+    if (c == ROUGE) {
+        std::cout << "La couleur est rouge" << std::endl;
+    }
+
+    Niveau n = Niveau::MOYEN;
+
+    if (n == Niveau::MOYEN) {
+        cout << "La couleur est rouge" << endl;
+    }
 
     return EXIT_SUCCESS;
 }
