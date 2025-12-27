@@ -39,5 +39,10 @@ int main() {
 
     std::cout << "Entier [0,9]: " << n << "\n";
     std::cout << R"(Reel [0,1]: )" << x << "\n";
+
+    unsigned long long superLongNumber = 123456789;
+    cout << "SuperLong: 123456789" << superLongNumber << "\n";
+    system("pause");
+
     return 0;
 }
