@@ -42,7 +42,7 @@ int main() {
 
     unsigned long long superLongNumber = 123456789;
     cout << "SuperLong: 123456789" << superLongNumber << "\n";
-    system("pause");
+    // system("pause");
 
     return 0;
 }
