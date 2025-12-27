@@ -11,6 +11,12 @@ enum CodeRetour {
     ERREUR_FICHIER = 2
 };
 
+enum class CodeRetour2 {
+    SUCCES = 0,
+    ERREUR_FICHIER = 1,
+    ERREUR_ENTREE = 2
+};
+
 enum Couleur {
     ROUGE,
     VERT,
