@@ -5,6 +5,12 @@
 #include <iostream>
 using namespace std;
 
+enum CodeRetour {
+    SUCCES = 0,
+    ERREUR_ENTREE = 1,
+    ERREUR_FICHIER = 2
+};
+
 int main() {
     const auto elapsedSeconds = time(nullptr); // number of seconds since Jan 1 1970
     srand(elapsedSeconds);
@@ -43,6 +49,9 @@ int main() {
     unsigned long long superLongNumber = 123456789;
     cout << "SuperLong: 123456789" << superLongNumber << "\n";
     // system("pause");
+    cout << R"(Reel: 123456789)" << superLongNumber << "\n";
+    cout << "EXIT_SUCCESS vaut zero : " << EXIT_SUCCESS;
+    cout << CodeRetour[ERREUR_FICHIER] << endl;
 
-    return 0;
+    return EXIT_SUCCESS;
 }
